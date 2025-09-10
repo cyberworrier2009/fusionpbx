@@ -485,7 +485,7 @@
 	end
 
 --send the selected variables to the console
-	if (fax_success ~= nil) then
+	if (fax_success ~= nil and fax_success=="1") then
 		freeswitch.consoleLog("INFO","fax_success: '" .. fax_success .. "'\n");
 	end
 	freeswitch.consoleLog("INFO","domain_uuid: '" .. domain_uuid .. "'\n");
